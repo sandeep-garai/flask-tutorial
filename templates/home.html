@@ -1,0 +1,10 @@
+{% entends "layout.html" %}
+{% block content %}
+    <h1>HOMEEEEEEE PAGE</h1>
+
+    <!-- //the templating engine flask uses is jinja2w -->
+    {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author}}  posted {{ post.content}}</p>
+    {% endfor %}
+{% endblock content %}
